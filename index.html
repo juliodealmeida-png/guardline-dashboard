@@ -1,63 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Guardline AI Revenue Engine</title>
-<style>:root{--bg:#0a0a0a;--bg2:#141414;--bg3:#1c1c1c;--bd:#2a2a2a;--t:#e5e5e5;--t2:#999;--t3:#666;--br:#0F6E56;--g:#22c55e;--r:#ef4444;--bl:#3b82f6;--am:#f59e0b;--pu:#8b5cf6}*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,sans-serif;background:var(--bg);color:var(--t);min-height:100vh}.c{max-width:1100px;margin:0 auto;padding:20px}input{background:var(--bg2);border:1px solid var(--bd);color:var(--t);padding:10px 14px;border-radius:8px;font-size:14px;width:100%;font-family:inherit}input:focus{outline:none;border-color:var(--br)}.btn{background:var(--br);color:#fff;border:none;padding:12px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;width:100%;font-family:inherit}.btn:disabled{opacity:.5}.b{display:inline-block;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:500}.bg{background:#16392a;color:#22c55e}.bb{background:#1a2744;color:#3b82f6}.ba{background:#362a14;color:#f59e0b}.bp{background:#2a1f47;color:#8b5cf6}.br2{background:#3a1a1a;color:#ef4444}.cd{background:var(--bg2);border:1px solid var(--bd);border-radius:12px;padding:16px 20px;margin-bottom:8px}.m{background:var(--bg2);border-radius:10px;padding:14px 18px}.nav{display:flex;gap:2px;border-bottom:1px solid var(--bd);margin-bottom:20px;overflow-x:auto}.nav button{padding:10px 14px;font-size:12px;color:var(--t3);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;font-family:inherit}.nav button.a{color:var(--br);border-bottom-color:var(--br);font-weight:500}.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.lw{display:flex;align-items:center;justify-content:center;min-height:90vh}.es{background:#2a2010;border-radius:10px;padding:16px;color:var(--am);font-size:13px}.li{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:8px;cursor:pointer;font-size:13px}.li:hover{background:var(--bg3)}.av{width:36px;height:36px;border-radius:50%;background:#173d31;display:flex;align-items:center;justify-content:center;color:var(--br);font-weight:500;font-size:13px}@media(max-width:600px){.g2,.g4{grid-template-columns:1fr}}</style></head>
-<body><div class="c" id="app"></div>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Guardline AI Revenue Engine</title>
+<style>
+:root{--bg:#0a0a0a;--bg2:#141414;--bg3:#1c1c1c;--bd:#2a2a2a;--t:#e5e5e5;--t2:#999;--t3:#666;--br:#0F6E56;--g:#22c55e;--r:#ef4444;--bl:#3b82f6;--am:#f59e0b;--pu:#8b5cf6}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,sans-serif;background:var(--bg);color:var(--t);min-height:100vh}
+.c{max-width:1100px;margin:0 auto;padding:20px}
+input{background:var(--bg2);border:1px solid var(--bd);color:var(--t);padding:10px 14px;border-radius:8px;font-size:14px;width:100%;font-family:inherit}
+input:focus{outline:none;border-color:var(--br)}
+.btn{background:var(--br);color:#fff;border:none;padding:12px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;width:100%;font-family:inherit}
+.btn:disabled{opacity:.5}
+.b{display:inline-block;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:500}
+.bg{background:#16392a;color:#22c55e}.bb{background:#1a2744;color:#3b82f6}.ba{background:#362a14;color:#f59e0b}.bp{background:#2a1f47;color:#8b5cf6}.br2{background:#3a1a1a;color:#ef4444}
+.cd{background:var(--bg2);border:1px solid var(--bd);border-radius:12px;padding:16px 20px;margin-bottom:8px}
+.m{background:var(--bg2);border-radius:10px;padding:14px 18px}
+.nav{display:flex;gap:2px;border-bottom:1px solid var(--bd);margin-bottom:20px;overflow-x:auto}
+.nav button{padding:10px 14px;font-size:12px;color:var(--t3);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;font-family:inherit}
+.nav button.a{color:var(--br);border-bottom-color:var(--br);font-weight:500}
+.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lw{display:flex;align-items:center;justify-content:center;min-height:90vh}
+.es{background:#2a2010;border-radius:10px;padding:16px;color:var(--am);font-size:13px}
+.li{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:8px;cursor:pointer;font-size:13px}
+.li:hover{background:var(--bg3)}
+.av{width:36px;height:36px;border-radius:50%;background:#173d31;display:flex;align-items:center;justify-content:center;color:var(--br);font-weight:500;font-size:13px}
+@media(max-width:600px){.g2,.g4{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="c" id="app"></div>
 <script>
-const A='https://guardline-engine-production.up.railway.app/api';
-let tk=null,us=null,pg='overview';
-const $=i=>document.getElementById(i);
-async function ag(p){try{const r=await fetch(A+p,{headers:{'Authorization':'Bearer '+tk}});return r.ok?r.json():null}catch{return null}}
-function bd(t,c){return '<span class="b b'+c+'">'+t+'<\/span>'}
-function mt(l,v,c){return '<div class="m"><div style="font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">'+l+'<\/div><div style="font-size:28px;font-weight:500;color:'+c+'">'+v+'<\/div><\/div>'}
+var A='https://guardline-engine-production.up.railway.app/api';
+var tk=null,us=null,pg='overview';
+function $(i){return document.getElementById(i)}
+function ag(p){return fetch(A+p,{headers:{'Authorization':'Bearer '+tk}}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
+function bd(t,c){return '<span class="b b'+c+'">'+t+'</span>'}
+function mt(l,v,c){return '<div class="m"><div style="font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">'+l+'</div><div style="font-size:28px;font-weight:500;color:'+c+'">'+v+'</div></div>'}
 
 function renderLogin(){
-$('app').innerHTML='<div class="lw"><div class="cd" style="width:380px;padding:36px"><div style="display:flex;align-items:center;gap:10px;margin-bottom:24px"><div style="width:40px;height:40px;border-radius:10px;background:var(--br);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:18px">G<\/div><div><div style="font-size:18px;font-weight:600">Guardline<\/div><div style="font-size:11px;color:var(--t3)">AI Revenue Engine<\/div><\/div><\/div><div style="margin-bottom:14px"><label style="font-size:11px;color:var(--t2);display:block;margin-bottom:4px">Email<\/label><input type="email" id="le" value="julio.dealmeida@guardline.io"><\/div><div style="margin-bottom:18px"><label style="font-size:11px;color:var(--t2);display:block;margin-bottom:4px">Password<\/label><input type="password" id="lp" value="guardline2026"><\/div><div id="err" style="color:var(--r);font-size:12px;display:none"><\/div><button class="btn" onclick="doLogin()">Entrar no Dashboard<\/button><div style="font-size:10px;color:var(--t3);margin-top:14px;text-align:center">Conecta em tempo real ao backend no Railway<\/div><\/div><\/div>';
-$('lp').onkeydown=e=>{if(e.key==='Enter')doLogin()};
+$('app').innerHTML='<div class="lw"><div class="cd" style="width:380px;padding:36px">';
+var s='<div style="display:flex;align-items:center;gap:10px;margin-bottom:24px">';
+s+='<div style="width:40px;height:40px;border-radius:10px;background:var(--br);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:18px">G</div>';
+s+='<div><div style="font-size:18px;font-weight:600">Guardline</div><div style="font-size:11px;color:var(--t3)">AI Revenue Engine</div></div></div>';
+s+='<div style="margin-bottom:14px"><label style="font-size:11px;color:var(--t2);display:block;margin-bottom:4px">Email</label>';
+s+='<input type="email" id="le" value="julio.dealmeida@guardline.io"></div>';
+s+='<div style="margin-bottom:18px"><label style="font-size:11px;color:var(--t2);display:block;margin-bottom:4px">Password</label>';
+s+='<input type="password" id="lp" value="guardline2026"></div>';
+s+='<div id="err" style="color:var(--r);font-size:12px;display:none"></div>';
+s+='<button class="btn" onclick="doLogin()">Entrar no Dashboard</button>';
+s+='<div style="font-size:10px;color:var(--t3);margin-top:14px;text-align:center">Conecta em tempo real ao backend no Railway</div>';
+$('app').innerHTML='<div class="lw"><div class="cd" style="width:380px;padding:36px">'+s+'</div></div>';
+$('lp').onkeydown=function(e){if(e.key==='Enter')doLogin()};
 }
 
-async function doLogin(){
-const e=$('le').value,p=$('lp').value;
+function doLogin(){
+var e=$('le').value,p=$('lp').value;
 $('err').style.display='none';
-try{
-let r=await fetch(A+'/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,password:p})});
-if(!r.ok&&r.status===401){r=await fetch(A+'/auth/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,password:p,name:e.split('@')[0].replace(/\\./g,' ').replace(/\\b\\w/g,c=>c.toUpperCase()),orgSlug:'guardline'})})}
-if(!r.ok)throw new Error('Credenciais invalidas');
-const d=await r.json();tk=d.accessToken;us=d.user;renderDash();
-}catch(x){$('err').textContent=x.message;$('err').style.display='block'}}
+fetch(A+'/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,password:p})})
+.then(function(r){
+if(!r.ok&&r.status===401){
+var nm=e.split('@')[0].split('.').map(function(w){return w.charAt(0).toUpperCase()+w.slice(1)}).join(' ');
+return fetch(A+'/auth/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e,password:p,name:nm,orgSlug:'guardline'})})}
+return r})
+.then(function(r){if(!r.ok)throw new Error('Credenciais invalidas');return r.json()})
+.then(function(d){tk=d.accessToken;us=d.user;renderDash()})
+.catch(function(x){$('err').textContent=x.message;$('err').style.display='block'})
+}
 
-const PG=[['overview','Overview'],['leads','Leads'],['campaigns','Campaigns'],['users','Users'],['analytics','Analytics'],['connections','Connections'],['scoring','Scoring'],['api','API Info']];
+var PG=[['overview','Overview'],['leads','Leads'],['campaigns','Campaigns'],['users','Users'],['analytics','Analytics'],['connections','Connections'],['scoring','Scoring'],['api','API Info']];
 
 function renderDash(){
-let n='';PG.forEach(p=>{n+='<button class="'+(p[0]===pg?'a':'')+'" onclick="pg=\''+p[0]+'\';renderDash()">'+p[1]+'<\/button>'});
-$('app').innerHTML='<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px"><div style="width:34px;height:34px;border-radius:8px;background:var(--br);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:16px">G<\/div><div style="flex:1"><span style="font-size:16px;font-weight:500">Guardline <\/span><span style="font-size:12px;color:var(--t2)">Control Center<\/span><\/div><span style="font-size:11px;color:var(--t3)">'+(us?.name||'')+'<\/span> '+bd(us?.role||'','g')+'<\/div><div style="font-size:10px;color:var(--br);margin-bottom:12px">&#9679; Conectado a: guardline-engine-production.up.railway.app<\/div><div class="nav">'+n+'<\/div><div style="font-size:18px;font-weight:500;margin-bottom:14px">'+PG.find(p=>p[0]===pg)?.[1]+'<\/div><div id="pc"><\/div>';
-loadPg()}
+var n='';PG.forEach(function(p){n+='<button class="'+(p[0]===pg?'a':'')+'" onclick="pg=this.dataset.p;renderDash()" data-p="'+p[0]+'">'+p[1]+'</button>'});
+var hd='<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">';
+hd+='<div style="width:34px;height:34px;border-radius:8px;background:var(--br);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:16px">G</div>';
+hd+='<div style="flex:1"><span style="font-size:16px;font-weight:500">Guardline </span><span style="font-size:12px;color:var(--t2)">Control Center</span></div>';
+hd+='<span style="font-size:11px;color:var(--t3)">'+(us?us.name:'')+'</span> '+bd(us?us.role:'','g')+'</div>';
+hd+='<div style="font-size:10px;color:var(--br);margin-bottom:12px"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--g)"></span> Conectado a: guardline-engine-production.up.railway.app</div>';
+hd+='<div class="nav">'+n+'</div>';
+var title=PG.filter(function(p){return p[0]===pg})[0];
+hd+='<div style="font-size:18px;font-weight:500;margin-bottom:14px">'+(title?title[1]:'')+'</div><div id="pc"></div>';
+$('app').innerHTML=hd;
+loadPg();
+}
 
-async function loadPg(){
-const el=$('pc');el.innerHTML='<div style="text-align:center;padding:40px;color:var(--t3)">Carregando...<\/div>';
+function loadPg(){
+var el=$('pc');if(!el)return;
+el.innerHTML='<div style="text-align:center;padding:40px;color:var(--t3)">Carregando...</div>';
+
 if(pg==='overview'){
-const[s,c,u]=await Promise.all([ag('/leads/stats'),ag('/campaigns'),ag('/users')]);
-const cl=Array.isArray(c)?c:[];const ul=Array.isArray(u)?u:[];
-el.innerHTML='<div class="g4" style="margin-bottom:20px">'+mt('Total Leads',s?.total||0,'var(--br)')+mt('Campaigns',cl.length,'var(--bl)')+mt('Users',ul.length,'var(--pu)')+mt('API Status','Online','var(--g)')+'<\/div>'+((s?.total||0)===0?'<div class="es">O banco de leads esta vazio. Conecte o n8n ou importe via API.<\/div>':'')+cl.map(c=>'<div class="cd" style="display:flex;justify-content:space-between;align-items:center"><span>'+c.name+'<\/span>'+bd(c.status,c.status==='ACTIVE'?'g':'b')+'<\/div>').join('')}
+Promise.all([ag('/leads/stats'),ag('/campaigns'),ag('/users')]).then(function(r){
+var s=r[0]||{},cl=Array.isArray(r[1])?r[1]:[],ul=Array.isArray(r[2])?r[2]:[];
+var h='<div class="g4" style="margin-bottom:20px">'+mt('Total Leads',s.total||0,'var(--br)')+mt('Campaigns',cl.length,'var(--bl)')+mt('Users',ul.length,'var(--pu)')+mt('API','Online','var(--g)')+'</div>';
+if(!s.total)h+='<div class="es">Banco de leads vazio. Conecte o n8n ou importe via API.</div>';
+cl.forEach(function(c){h+='<div class="cd" style="display:flex;justify-content:space-between;align-items:center"><span>'+c.name+'</span>'+bd(c.status,c.status==='ACTIVE'?'g':'b')+'</div>'});
+el.innerHTML=h})}
+
 else if(pg==='leads'){
-const d=await ag('/leads?limit=50');
-el.innerHTML='<div style="font-size:11px;color:var(--t3);margin-bottom:8px">'+(d?.total||0)+' leads<\/div>'+(d?.leads?.length?d.leads.map(l=>'<div class="li"><div style="flex:1;font-weight:500">'+(l.fullName||l.email)+'<\/div>'+bd(l.state||'NEW','g')+'<span style="width:30px;text-align:right;font-weight:500">'+(l.leadScore||'-')+'<\/span><\/div>').join(''):'<div class="es">Nenhum lead. Conecte o n8n ou importe via API.<\/div>')}
+ag('/leads?limit=50').then(function(d){
+d=d||{leads:[],total:0};
+var h='<div style="font-size:11px;color:var(--t3);margin-bottom:8px">'+d.total+' leads</div>';
+if(!d.leads||!d.leads.length)h+='<div class="es">Nenhum lead. Conecte o n8n ou importe via API.</div>';
+else d.leads.forEach(function(l){h+='<div class="li"><div style="flex:1;font-weight:500">'+(l.fullName||l.email)+'</div>'+bd(l.state||'NEW','g')+'<span style="width:30px;text-align:right;font-weight:500">'+(l.leadScore||'-')+'</span></div>'});
+el.innerHTML=h})}
+
 else if(pg==='campaigns'){
-const d=await ag('/campaigns');const cl=Array.isArray(d)?d:[];
-el.innerHTML='<div style="font-size:11px;color:var(--t3);margin-bottom:8px">'+cl.length+' campanhas<\/div>'+cl.map(c=>'<div class="cd"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:14px;font-weight:500">'+c.name+'<\/span>'+bd(c.status,c.status==='ACTIVE'?'g':'b')+'<\/div><div style="font-size:11px;color:var(--t2)">'+(c.type||'')+' - '+c.id.substring(0,8)+'<\/div><\/div>').join('')}
+ag('/campaigns').then(function(d){
+var cl=Array.isArray(d)?d:[];var h='<div style="font-size:11px;color:var(--t3);margin-bottom:8px">'+cl.length+' campanhas</div>';
+cl.forEach(function(c){h+='<div class="cd"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:14px;font-weight:500">'+c.name+'</span>'+bd(c.status,c.status==='ACTIVE'?'g':'b')+'</div><div style="font-size:11px;color:var(--t2)">'+(c.type||'')+' - '+c.id.substring(0,8)+'</div></div>'});
+el.innerHTML=h})}
+
 else if(pg==='users'){
-const d=await ag('/users');const ul=Array.isArray(d)?d:[];
-el.innerHTML=ul.map(u=>'<div class="cd" style="display:flex;align-items:center;gap:12px"><div class="av">'+(u.name||'?').split(' ').map(n=>n[0]).join('')+'<\/div><div style="flex:1"><div style="font-weight:500">'+u.name+'<\/div><div style="font-size:11px;color:var(--t2)">'+u.email+'<\/div><\/div>'+bd(u.role,'p')+'<\/div>').join('')}
+ag('/users').then(function(d){
+var ul=Array.isArray(d)?d:[];var h='';
+ul.forEach(function(u){var ini=(u.name||'?').split(' ').map(function(n){return n.charAt(0)}).join('');h+='<div class="cd" style="display:flex;align-items:center;gap:12px"><div class="av">'+ini+'</div><div style="flex:1"><div style="font-weight:500">'+u.name+'</div><div style="font-size:11px;color:var(--t2)">'+u.email+'</div></div>'+bd(u.role,'p')+'</div>'});
+el.innerHTML=h})}
+
+// Analytics
 else if(pg==='analytics'){
-const d=await ag('/analytics/overview');
-el.innerHTML='<div class="g4">'+mt('Total Leads',d?.totalLeads||0,'var(--br)')+mt('Dispatches',d?.totalDispatches||0,'var(--bl)')+mt('Replies',d?.totalReplies||0,'var(--pu)')+mt('Meetings',d?.totalMeetings||0,'var(--g)')+'<\/div>'}
+ag('/analytics/overview').then(function(d){
+d=d||{};el.innerHTML='<div class="g4">'+mt('Leads',d.totalLeads||0,'var(--br)')+mt('Dispatches',d.totalDispatches||0,'var(--bl)')+mt('Replies',d.totalReplies||0,'var(--pu)')+mt('Meetings',d.totalMeetings||0,'var(--g)')+'</div>'})}
+
 else if(pg==='connections'){
-const d=await ag('/connections');const cl=Array.isArray(d)?d:[];
-el.innerHTML=cl.length?'<div class="g2">'+cl.map(c=>'<div class="cd" style="display:flex;align-items:center;gap:10px"><div style="width:34px;height:34px;border-radius:8px;background:'+(c.status==='CONNECTED'?'#173d31':'var(--bg3)')+';display:flex;align-items:center;justify-content:center;font-weight:500;color:'+(c.status==='CONNECTED'?'var(--br)':'var(--t3)')+'">'+(c.provider||'?')[0]+'<\/div><div style="flex:1;font-weight:500">'+c.provider+'<\/div>'+bd(c.status,c.status==='CONNECTED'?'g':'r')+'<\/div>').join('')+'<\/div>':'<div class="es">Nenhuma conexao.<\/div>'}
+ag('/connections').then(function(d){
+var cl=Array.isArray(d)?d:[];if(!cl.length){el.innerHTML='<div class="es">Nenhuma conexao.</div>';return}
+var h='<div class="g2">';cl.forEach(function(c){
+var col=c.status==='CONNECTED'?'#173d31':'var(--bg3)';var tcol=c.status==='CONNECTED'?'var(--br)':'var(--t3)';
+h+='<div class="cd" style="display:flex;align-items:center;gap:10px"><div style="width:34px;height:34px;border-radius:8px;background:'+col+';display:flex;align-items:center;justify-content:center;font-weight:500;color:'+tcol+'">'+(c.provider||'?').charAt(0)+'</div><div style="flex:1;font-weight:500">'+c.provider+'</div>'+bd(c.status,c.status==='CONNECTED'?'g':'br2')+'</div>'});
+el.innerHTML=h+'</div>'})}
+
 else if(pg==='scoring'){
-const[m,p]=await Promise.all([ag('/scoring/models'),ag('/scoring/products')]);
-const ml=Array.isArray(m)?m:[];const pl=Array.isArray(p)?p:[];
-el.innerHTML='<div style="font-size:14px;font-weight:500;margin-bottom:8px">Models ('+ml.length+')<\/div>'+(ml.length?ml.map(s=>'<div class="cd"><div style="font-weight:500">'+s.name+'<\/div><\/div>').join(''):'<div class="cd" style="color:var(--t2);font-size:12px">Nenhum modelo.<\/div>')+'<div style="font-size:14px;font-weight:500;margin:16px 0 8px">Products ('+pl.length+')<\/div>'+(pl.length?'<div class="g2">'+pl.map(p=>'<div class="cd"><div style="font-weight:500;font-size:13px">'+p.name+'<\/div><\/div>').join('')+'<\/div>':'<div class="cd" style="color:var(--t2);font-size:12px">Nenhum produto.<\/div>')}
+Promise.all([ag('/scoring/models'),ag('/scoring/products')]).then(function(r){
+var ml=Array.isArray(r[0])?r[0]:[];var pl=Array.isArray(r[1])?r[1]:[];
+var h='<div style="font-size:14px;font-weight:500;margin-bottom:8px">Models ('+ml.length+')</div>';
+if(!ml.length)h+='<div class="cd" style="color:var(--t2);font-size:12px">Nenhum modelo.</div>';
+ml.forEach(function(s){h+='<div class="cd"><div style="font-weight:500">'+s.name+'</div></div>'});
+h+='<div style="font-size:14px;font-weight:500;margin:16px 0 8px">Products ('+pl.length+')</div>';
+if(!pl.length)h+='<div class="cd" style="color:var(--t2);font-size:12px">Nenhum produto.</div>';
+else{h+='<div class="g2">';pl.forEach(function(p){h+='<div class="cd"><div style="font-weight:500;font-size:13px">'+p.name+'</div></div>'});h+='</div>'}
+el.innerHTML=h})}
+
 else if(pg==='api'){
-el.innerHTML='<div class="cd"><div style="font-size:14px;font-weight:500;margin-bottom:10px">API Base URL<\/div><div style="background:var(--bg3);border-radius:8px;padding:10px 14px;font-family:monospace;font-size:12px;margin-bottom:14px">https://guardline-engine-production.up.railway.app/api<\/div><div style="font-size:14px;font-weight:500;margin-bottom:10px">Endpoints<\/div><div style="font-family:monospace;font-size:11px;color:var(--t2);line-height:2">POST /auth/login<br>POST /auth/register<br>GET /leads<br>GET /leads/stats<br>GET /campaigns<br>POST /campaigns<br>GET /reps<br>GET /connections<br>GET /scoring/models<br>GET /scoring/products<br>GET /analytics/overview<br>GET /users<br>POST /n8n/callbacks<\/div><\/div><div class="cd" style="background:#173d31;border:none"><div style="font-weight:600;margin-bottom:6px">Credenciais<\/div><div style="font-size:12px;line-height:1.8">julio.dealmeida@guardline.io / guardline2026 (SUPER_ADMIN)<br>maria.santos@guardline.io / guardline2026<br>carlos.perez@guardline.io / guardline2026<\/div><\/div>'}}
+var h='<div class="cd"><div style="font-size:14px;font-weight:500;margin-bottom:10px">API Base URL</div>';
+h+='<div style="background:var(--bg3);border-radius:8px;padding:10px 14px;font-family:monospace;font-size:12px;margin-bottom:14px">https://guardline-engine-production.up.railway.app/api</div>';
+h+='<div style="font-size:14px;font-weight:500;margin-bottom:10px">Endpoints</div>';
+h+='<div style="font-family:monospace;font-size:11px;color:var(--t2);line-height:2">';
+h+='POST /auth/login<br>POST /auth/register<br>GET /leads<br>GET /leads/stats<br>GET /campaigns<br>POST /campaigns<br>GET /reps<br>GET /connections<br>GET /scoring/models<br>GET /scoring/products<br>GET /analytics/overview<br>GET /users<br>POST /n8n/callbacks';
+h+='</div></div>';
+h+='<div class="cd" style="background:#173d31;border:none"><div style="font-weight:600;margin-bottom:6px">Credenciais</div>';
+h+='<div style="font-size:12px;line-height:1.8">julio.dealmeida@guardline.io / guardline2026 (SUPER_ADMIN)<br>maria.santos@guardline.io / guardline2026<br>carlos.perez@guardline.io / guardline2026</div></div>';
+el.innerHTML=h}
+
+}
+
 renderLogin();
-<\/script></body></html>
+</script>
+</body>
+</html>
